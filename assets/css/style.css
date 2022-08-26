@@ -1007,8 +1007,8 @@ section {
 }
 
 .counts .image {
-  background: url("../img/counts-img.jpg") center center no-repeat;
-  background-size: cover;
+  background: url("../img/codez/codez\ 0.jpeg") center center no-repeat;
+  background-size: contain;
   min-height: 400px;
 }
 
@@ -1577,8 +1577,11 @@ section {
 .icon-box .icon img{
   border-radius: 8px 8px 0 0;
 }
-.icon-box h4,.icon-box p{
-  /* padding: 0 20px 20px 20px; */
+.icon-box h4{
+  padding: 0 20px;
+}
+.icon-box p{
+  padding: 0 20px 20px 20px;
 }
 .accordion-button{ padding: 0 !important;}
 
