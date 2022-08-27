@@ -1,8 +1,8 @@
 /**
 * Template Name: Gp - v4.8.1
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template URL: http://codezpro.com/gp-free-multipurpose-html-bootstrap-template/
+* Author: Codez Pro.com
+* License: http://codezpro.com/license/
 */
 (function() {
   "use strict";
