@@ -471,7 +471,7 @@ h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/hero-bg.jpg") top left;
+  background: url("../img/bg.jpg") top left;
   background-size: cover;
   position: relative;
 }
@@ -706,6 +706,7 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  width: 100%;
 }
 
 .featured-services .icon-box::before {
@@ -1826,4 +1827,12 @@ section {
     text-align: center;
     padding: 2px 0;
   }
+}
+.sub-btn{
+  background: #106eea !important;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
 }
