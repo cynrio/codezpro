@@ -1597,12 +1597,12 @@ section {
   color: #300044 !important;
   background-color: #ffb637 !important;
 }
-.why-us-sec h1{
+/* .why-us-sec h1{
     color: #ffc14d;
     font-weight: bolder;
     font-family: monospace;
     font-size: 60px;
-}
+} */
 
 
 
@@ -1653,14 +1653,14 @@ section {
   display:flex;
   align-items:center;
 }
-.typing > .static-txt {
+/* .typing > .static-txt {
   color: #fff;
   font-size: 50px;
-}
+} */
 
 .typing > .dynamic-txt {
   color: var(--primary);
-  font-size:50px;
+  font-size:37px;
   height:70px;
   /* line-height:70px; */
   overflow:hidden;
@@ -1671,19 +1671,19 @@ section {
   list-style:none;
   font-weight:500;
   position: relative;
-  animation: slide 6s steps(2) infinite;
+  animation: fadeIn 1s infinite alternate;
 }
-@keyframes slide{
+/* @keyframes slide{
   100% {
     top: -70px;
   }
-}
-.dynamic-txt li span {
+} */
+/* .dynamic-txt li span {
   margin:5px 0;
   line-height:70px;
-}
+} */
 
-.dynamic-txt li span::after {
+/* .dynamic-txt li span::after {
   position:absolute;
   content:'';
   left:0;
@@ -1692,11 +1692,15 @@ section {
   line-height:70px;
   background:var(--background);
   border-left: 2px solid var(--primary);
-  animation: typing 3s steps(10) infinite;
-}
+  animation: fadeIn 1s infinite alternate;
+} */
 
-@keyframes typing {
+/* @keyframes typing {
   40%,60% {left: calc(100% + 30px);}
   100% {left:0;}
-}
+} */
 
+/* why us */
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
