@@ -491,6 +491,7 @@ h6 {
 
 #hero .icon-box:hover {
   border-color: #4d9c3c;
+  background: #151515;
 }
 
 @media (min-width: 1024px) {
