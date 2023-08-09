@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #ffd584;
+  color: #5cd341;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #4d9c3c;
+  background: #151515;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -51,16 +51,17 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #151515;
+  color: #fff;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #151515;
+  background: #4d9c3c;
 }
 
 .back-to-top:hover i {
-  color: #4d9c3c;
+  /* color: #4d9c3c; */
+  color: #fff;
 }
 
 .back-to-top.active {
@@ -176,8 +177,8 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #ffbb38;
-  color: #343a40;
+  background: #4d9c3c;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -418,7 +419,7 @@ h6 {
   background: url("../img/codez/codez\ \(12\).jpg") top center;
   background-size: cover;
   position: relative;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 #hero:before {
@@ -755,7 +756,7 @@ section {
 .cta .cta-btn:hover {
   background: #4d9c3c;
   border-color: #4d9c3c;
-  color: #151515;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1184,7 +1185,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #151515;
+  color: #fff;
   background: #4d9c3c;
 }
 
@@ -1234,7 +1235,7 @@ section {
 .contact .info i {
   font-size: 20px;
   background: #4d9c3c;
-  color: #151515;
+  color: #fff;
   float: left;
   width: 44px;
   height: 44px;
@@ -1338,16 +1339,17 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #4d9c3c;
+  background: #151515;
   border: 0;
   padding: 10px 24px;
-  color: #151515;
+  color: #fff;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
+  background: #4d9c3c;
+
 }
 
 @-webkit-keyframes animate-loading {
@@ -1480,7 +1482,7 @@ section {
 
 #footer .footer-top .social-links a:hover {
   background: #4d9c3c;
-  color: #151515;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -1553,14 +1555,14 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #4d9c3c;
-  color: #151515;
+  background: #151515;
+  color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ffcd6b;
+  background: #4d9c3c;
 }
 
 #footer .copyright {
