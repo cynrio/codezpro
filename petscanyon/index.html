@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Canyon</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            min-height: calc(100vh - 100px); /* Ensure main takes up at least the viewport height minus header height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Push content to the top and footer to the bottom */
+        }
+
+        .hero {
+            position: relative;
+            padding: 100px 0;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #4d9c3c;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .timer {
+            font-size: 2rem;
+            margin: 0 10px;
+        }
+
+        .label {
+            font-size: 0.8rem;
+        }
+
+        .launch-text {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/img/codez/new-logo.png" height="50" alt="Pets Canyon Logo">
+            </div>
+        </nav>
+    </header> -->
+    <main>
+        <section class="hero">
+            <video class="background-video" autoplay loop muted playsinline>
+                <source src="https://websites.godaddy.com/categories/v4/videos/raw/video/uA41GmyyG8IMaxXdb" type="video/mp4">
+            </video>
+            <div class="content">
+                <div class="logo">
+                    <img src="../assets/img/codez/new-logo.png" height="100" alt="Pets Canyon Logo">
+                </div>
+                <h1>Pets Canyon</h1>
+                <p>Your Trusted Online Pet Healthcare Service</p>
+                <div class="countdown">
+                    <div class="timer">
+                        <span id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="timer">
+                        <span id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="timer">
+                        <span id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="timer">
+                        <span id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <p class="launch-text">We're launching soon! Stay tuned for high-quality pet healthcare services.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pets Canyon</p>
+    </footer>
+
+    <script>
+        // JavaScript code for countdown timer
+        function updateCountdown() {
+            const launchDate = new Date("2023-09-30 00:00:00").getTime();
+            const currentDate = new Date().getTime();
+            const timeDifference = launchDate - currentDate;
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = formatTime(days);
+            document.getElementById("hours").innerText = formatTime(hours);
+            document.getElementById("minutes").innerText = formatTime(minutes);
+            document.getElementById("seconds").innerText = formatTime(seconds);
+        }
+
+        function formatTime(time) {
+            return time < 10 ? `0${time}` : time;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
